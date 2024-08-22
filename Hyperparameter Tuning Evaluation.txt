@@ -1,23 +1,20 @@
 Reduce Outlier Strategy
 
-c-tf-idf
-Bert Topic Accuracy: 0.5878605556538665
-Bert Topic F1 Score: 0.6079889164235581
+c-tf-idf -> Accuracy: 0.5878605556538665, F1 Score: 0.6079889164235581
 
-embeddings
-Bert Topic Accuracy: 0.6133427711909396
-Bert Topic F1 Score: 0.6401199225139842
+embeddings -> Accuracy: 0.6133427711909396, F1 Score: 0.6401199225139842
 
 Dimensionality Reduction
 
-UMAP
-Bert Topic Accuracy: 0.5580524344569289
-Bert Topic F1 Score: 0.5557460250102086
+UMAP -> Accuracy: 0.5803402646502835, F1 Score: 0.5757021178629116
 
-PCA(n_components=5)
-Bert Topic Accuracy: 0.7058823529411765
-Bert Topic F1 Score: 0.7163773906480765
+K-means
 
-Truncated SVD
-Bert Topic Accuracy: 0.5104364326375711
-Bert Topic F1 Score: 0.5302764866114111
+- n_components=10 -> Accuracy: 0.729477611940298, F1 Score: 0.7307674094476659
+- n_components=25 -> Accuracy: 0.7429643527204502, F1 Score: 0.7450988951100153
+- n_components=50 -> Accuracy: 0.7523452157598499, F1 Score: 0.7544203748077257
+- n_components=75 -> Accuracy: 0.7485928705440901, F1 Score: 0.7502063152904366
+
+Truncated SVD -> Accuracy: 0.5302764866114111, F1 Score: 0.5557460250102086
+
+Skip Dimensionality Reduction -> Accuracy: 0.7504690431519699, F1 Score: 0.7519447039282099
